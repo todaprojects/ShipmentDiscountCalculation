@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipmentDiscountCalculation.Application", "ShipmentDiscountCalculation.Application\ShipmentDiscountCalculation.Application.csproj", "{7A0664D6-D8BC-4C51-9977-B8CF9A6C4287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipmentDiscountCalculation.Domain", "ShipmentDiscountCalculation.Domain\ShipmentDiscountCalculation.Domain.csproj", "{9A85BB3F-B232-40C8-ADA7-383AE88C8543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipmentDiscountCalculation.Tests", "ShipmentDiscountCalculation.Tests\ShipmentDiscountCalculation.Tests.csproj", "{CF3C3B1E-1741-4025-BB04-E6794CD1E677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A0664D6-D8BC-4C51-9977-B8CF9A6C4287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0664D6-D8BC-4C51-9977-B8CF9A6C4287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0664D6-D8BC-4C51-9977-B8CF9A6C4287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0664D6-D8BC-4C51-9977-B8CF9A6C4287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A85BB3F-B232-40C8-ADA7-383AE88C8543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A85BB3F-B232-40C8-ADA7-383AE88C8543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A85BB3F-B232-40C8-ADA7-383AE88C8543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A85BB3F-B232-40C8-ADA7-383AE88C8543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3C3B1E-1741-4025-BB04-E6794CD1E677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3C3B1E-1741-4025-BB04-E6794CD1E677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3C3B1E-1741-4025-BB04-E6794CD1E677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3C3B1E-1741-4025-BB04-E6794CD1E677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
