@@ -13,7 +13,7 @@ namespace ShipmentDiscountCalculation.Application.Helpers
                 var packageSize = (PackageSize) Enum.Parse(typeof(PackageSize), inputs[i]);
                 return packageSize;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 var msg = 
                     inputs.Aggregate<string, string>(null, (current, i) => current + (i + " "));

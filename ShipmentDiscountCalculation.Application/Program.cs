@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using ShipmentDiscountCalculation.Application.DataServices;
 using ShipmentDiscountCalculation.Application.Factories;
@@ -11,11 +12,12 @@ namespace ShipmentDiscountCalculation.Application
 {
     class Program
     {
-        private const string Path = @"../../../../Files/input.txt";
+        private static readonly char Separator = Path.DirectorySeparatorChar;
+        private static readonly string InputFilePath = $"..{Separator}..{Separator}..{Separator}..{Separator}Files{Separator}input.txt";
 
         static void Main(string[] args)
         {
-            IInputService inputService = new FileInputService(Path);
+            IInputService inputService = new FileInputService(FilePathHelper.GetInputFilePath(InputFilePath, Separator));
             IOutputService outputService = new ConsoleOutputService();
 
             // Get the list of available Shipping Providers in selected country

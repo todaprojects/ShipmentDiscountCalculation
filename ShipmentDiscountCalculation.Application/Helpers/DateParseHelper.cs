@@ -12,7 +12,7 @@ namespace ShipmentDiscountCalculation.Application.Helpers
                 var dateTime = DateTime.Parse(inputs[i]);
                 return dateTime;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 var msg = 
                     inputs.Aggregate<string, string>(null, (current, i) => current + (i + " "));

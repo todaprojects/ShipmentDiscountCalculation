@@ -14,7 +14,7 @@ namespace ShipmentDiscountCalculation.Application.Helpers
                 var carrier = carriers.First(s => s.Code.Equals(inputs[i]));
                 return carrier;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 var msg = 
                     inputs.Aggregate<string, string>(null, (current, i) => current + (i + " "));
