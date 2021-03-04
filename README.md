@@ -11,16 +11,14 @@
 
 ## General Info
 
-Backend Homework Assignment:
-
-### Requirements
+#### Requirements
 * Write clean and simple code, covered with unit tests, and easy to maintain.
 * Using additional libraries is prohibited. That constraint is not applied for unit tests and build.
 * Make sure the input data is loaded from a file (default name 'input.txt' is assumed).
 * Make sure that solutions outputs data to the screen (STDOUT) in a format described below.
 * Application design should be flexible enough to allow adding new rules and modifying existing ones easily.
 
-### Problem
+#### Problem
 On the Online Shop, when something is purchased, it has to be shipped and Shop provides various shipping options to its members across the globe. However, let's focus on France. In France, it is allowed to ship via ether 'Mondial Relay' (MR in short) or 'La Poste' (LP). While 'La Poste' provides usual courier delivery services, 'Mondial Relay' allows to drop and pick up a shipment at so-called drop-off point, thus being less convenient, but cheaper for larger packages.
 Each item, depending on its size gets an appropriate package size assigned to it:
 
