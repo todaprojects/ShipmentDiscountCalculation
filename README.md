@@ -1,4 +1,4 @@
-#ShipmentDiscountCalculation
+# Shipment Discount Calculation
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ Backend Homework Assignment:
 * Application design should be flexible enough to allow adding new rules and modifying existing ones easily.
 
 ### Problem
-On the Online Shop, when something is purchased, it has to be shipped and Shop provides various shipping options to its members across the globe. However, let's focus on France. In France, it is allowed to ship via ether 'Mondial Relay' (MR in short) or 'La Poste' (LP). While 'La Poste' provides usual courier delivery services, 'Mondial Relay' allows you to drop and pick up a shipment at so-called drop-off point, thus being less convenient, but cheaper for larger packages.
+On the Online Shop, when something is purchased, it has to be shipped and Shop provides various shipping options to its members across the globe. However, let's focus on France. In France, it is allowed to ship via ether 'Mondial Relay' (MR in short) or 'La Poste' (LP). While 'La Poste' provides usual courier delivery services, 'Mondial Relay' allows to drop and pick up a shipment at so-called drop-off point, thus being less convenient, but cheaper for larger packages.
 Each item, depending on its size gets an appropriate package size assigned to it:
 
     S - Small, a popular option to ship jewelry
@@ -75,7 +75,7 @@ Members transactions are listed in a file 'input.txt', each line containing: dat
 2015-02-29 CUSPS
 2015-03-01 S MR
 ```
-Your program should output transactions and append reduced shipment price and a shipment discount (or '-' if there is none). The program should append 'Ignored' word if the line format is wrong or carrier/sizes are unrecognized.
+A program should output transactions and append reduced shipment price and a shipment discount (or '-' if there is none). The program should append 'Ignored' word if the line format is wrong or carrier/sizes are unrecognized.
 ```
 2015-02-01 S MR 1.50 0.50
 2015-02-02 S MR 1.50 0.50
