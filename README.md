@@ -6,7 +6,7 @@
 > * [General info](#general-info)
 > * [Used technologies & tools](#used-technologies--tools)
 > * [Usage](#Usage)
-    >   * [Requirements](#Requirements)
+>   * [Requirements](#Requirements)
 >   * [Running application](#running-application)
 
 ## General Info
