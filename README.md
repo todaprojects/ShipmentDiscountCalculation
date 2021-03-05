@@ -1,6 +1,6 @@
-# Shipment Discount Calculation
+## Shipment Discount Calculation
 
-# `This project is under refactoring...`
+## `This project is under refactoring...`
 
 ## Table of contents
 
