@@ -4,11 +4,11 @@ using ShipmentDiscountCalculation.Application.Interfaces;
 
 namespace ShipmentDiscountCalculation.Application.DataServices
 {
-    public class FileInputService : IInputService
+    public class FileDataInputService : IDataInputService
     {
         private readonly StreamReader _file;
 
-        public FileInputService(string inputFilePath)
+        public FileDataInputService(string inputFilePath)
         {
             if (File.Exists(inputFilePath))
             {

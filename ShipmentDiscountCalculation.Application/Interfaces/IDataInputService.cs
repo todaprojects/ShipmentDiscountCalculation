@@ -1,6 +1,6 @@
 namespace ShipmentDiscountCalculation.Application.Interfaces
 {
-    public interface IInputService
+    public interface IDataInputService
     {
         string GetData();
     }
