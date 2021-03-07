@@ -4,7 +4,7 @@ using ShipmentDiscountCalculation.Domain.Models;
 
 namespace ShipmentDiscountCalculation.Application.DataServices
 {
-    public class ConsoleOutputService : IOutputService
+    public class ConsoleDataOutputService : IDataOutputService
     {
         public void Print(Shipment shipment)
         {

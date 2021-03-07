@@ -2,7 +2,7 @@ using ShipmentDiscountCalculation.Domain.Models;
 
 namespace ShipmentDiscountCalculation.Application.Interfaces
 {
-    public interface IOutputService
+    public interface IDataOutputService
     {
         void Print(Shipment shipment);
 
