@@ -28,19 +28,21 @@ namespace ShipmentDiscountCalculation.Application
 
                 var inputs = inputLine.Split(" ");
 
-                var date = DateParseHelper.Parse(inputs, 0);
-                var packageSize = PackageSizeParseHelper.Parse(inputs, 1);
-                var carrier = CarrierParseHelper.Parse(_carriers, inputs, 2);
-                var priceService = ShippingPriceFactory.GetPriceService(packageSize);
+                var shipment = new Shipment()
+                {
+                    Date = DateParseHelper.Parse(inputs, 0),
+                    PackageSize = PackageSizeParseHelper.Parse(inputs, 1),
+                    Carrier = CarrierParseHelper.Parse(_carriers, inputs, 2),
+                };
 
-                var shipment = new Shipment(date, packageSize, carrier, priceService);
+                shipment.PriceService = ShippingPriceFactory.GetPriceService(shipment.PackageSize);
 
                 shipment.ShippingPrice =
                     shipment.PriceService.GetShippingPrice(_carriers, _shipments, shipment);
 
                 shipment.Discount =
                     shipment.Carrier.Packages
-                        .Single(p => p.Size == packageSize)
+                        .Single(p => p.Size == shipment.PackageSize)
                         .Price - shipment.ShippingPrice;
 
                 _shipments.Add(shipment);
