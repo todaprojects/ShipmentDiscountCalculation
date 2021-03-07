@@ -115,6 +115,11 @@ A program should output transactions and append reduced shipment price and a shi
   `cd path/to/directory/of/ShipmentDiscountCalculation`
 
 
-* Start application:
+* Open **ShipmentDiscountCalculation.Application** folder:
 
-  `dotnet run --project ./ShipmentDiscountCalculation.Application/ShipmentDiscountCalculation.Application.csproj`
+  `cd ShipmentDiscountCalculation.Application`
+
+
+* Run application:
+
+  `dotnet run`
