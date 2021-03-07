@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using ShipmentDiscountCalculation.Application.Helpers;
 using ShipmentDiscountCalculation.Application.Interfaces;
 
 namespace ShipmentDiscountCalculation.Application.DataServices
@@ -7,12 +8,13 @@ namespace ShipmentDiscountCalculation.Application.DataServices
     public class FileDataInputService : IDataInputService
     {
         private readonly StreamReader _file;
+        private readonly string _inputFilePath = InputFilePathHelper.GetInputFilePath();
 
-        public FileDataInputService(string inputFilePath)
+        public FileDataInputService()
         {
-            if (File.Exists(inputFilePath))
+            if (File.Exists(_inputFilePath))
             {
-                _file = new StreamReader(inputFilePath);
+                _file = new StreamReader(_inputFilePath);
             }
         }
 
