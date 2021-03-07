@@ -4,7 +4,7 @@ using ShipmentDiscountCalculation.Domain.Interfaces;
 
 namespace ShipmentDiscountCalculation.Domain.Models
 {
-    public class Shipment
+    public class Shipment : IShipment
     {
         public DateTime Date { get; set; }
 

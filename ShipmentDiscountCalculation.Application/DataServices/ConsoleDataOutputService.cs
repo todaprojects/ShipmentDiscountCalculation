@@ -1,12 +1,12 @@
 using System;
 using ShipmentDiscountCalculation.Application.Interfaces;
-using ShipmentDiscountCalculation.Domain.Models;
+using ShipmentDiscountCalculation.Domain.Interfaces;
 
 namespace ShipmentDiscountCalculation.Application.DataServices
 {
     public class ConsoleDataOutputService : IDataOutputService
     {
-        public void Print(Shipment shipment)
+        public void Print(IShipment shipment)
         {
             Console.Write(
                 $"{shipment.Date:yyyy-MM-dd} " +

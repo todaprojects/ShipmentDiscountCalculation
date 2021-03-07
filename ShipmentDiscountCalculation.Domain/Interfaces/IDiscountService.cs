@@ -5,6 +5,6 @@ namespace ShipmentDiscountCalculation.Domain.Interfaces
 {
     public interface IDiscountService
     {
-        public decimal AdjustDiscount(IEnumerable<Shipment> shipments, Shipment shipment, decimal shippingPrice);
+        public decimal AdjustDiscount(IEnumerable<IShipment> shipments, IShipment shipment, decimal shippingPrice);
     }
 }

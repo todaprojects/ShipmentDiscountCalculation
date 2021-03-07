@@ -14,9 +14,9 @@ namespace ShipmentDiscountCalculation.Application
     {
         private readonly IDataInputService _inputService = new FileDataInputService();
         private readonly List<Carrier> _carriers = CarrierFactory.GetShippingProviders();
-        private readonly List<Shipment> _shipments = new List<Shipment>();
+        private readonly List<IShipment> _shipments = new List<IShipment>();
 
-        public Shipment GetShipmentDiscountData()
+        public IShipment GetShipmentDiscountData()
         {
             try
             {
@@ -33,7 +33,7 @@ namespace ShipmentDiscountCalculation.Application
                 var carrier = CarrierParseHelper.Parse(_carriers, inputs, 2);
                 var priceService = ShippingPriceFactory.GetPriceService(packageSize);
 
-                var shipment = new Shipment(date, packageSize, carrier, priceService);
+                IShipment shipment = new Shipment(date, packageSize, carrier, priceService);
 
                 shipment.ShippingPrice =
                     shipment.PriceService.GetShippingPrice(_carriers, _shipments, shipment);

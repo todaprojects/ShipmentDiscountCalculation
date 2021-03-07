@@ -7,7 +7,7 @@ namespace ShipmentDiscountCalculation.Domain.Interfaces
     {
         public IDiscountService DiscountService { get; set; }
         
-        decimal GetShippingPrice(IEnumerable<Carrier> carriers, IEnumerable<Shipment> shipments,
-            Shipment shipment);
+        decimal GetShippingPrice(IEnumerable<Carrier> carriers, IEnumerable<IShipment> shipments,
+            IShipment shipment);
     }
 }
