@@ -28,8 +28,8 @@ namespace ShipmentDiscountCalculation.Domain.Services
         /// <param name="shipment"></param>
         /// <returns></returns>
         public decimal GetShippingPrice(IEnumerable<Carrier> carriers,
-            IEnumerable<IShipment> shipments,
-            IShipment shipment)
+            IEnumerable<Shipment> shipments,
+            Shipment shipment)
         {
             var shippingPrice = 0M;
             var countPerMonth = 0;
@@ -54,7 +54,7 @@ namespace ShipmentDiscountCalculation.Domain.Services
             return shippingPrice + DiscountService.AdjustDiscount(shipments, shipment, shippingPrice);
         }
 
-        private static int GetTransactionCount(IEnumerable<IShipment> shipments, IShipment shipment)
+        private static int GetTransactionCount(IEnumerable<Shipment> shipments, Shipment shipment)
         {
             return 1 + shipments.Count(s =>
                 s.PackageSize == shipment.PackageSize &&

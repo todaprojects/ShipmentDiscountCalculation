@@ -22,8 +22,8 @@ namespace ShipmentDiscountCalculation.Domain.Services
         /// <param name="shipment"></param>
         /// <returns></returns>
         public decimal GetShippingPrice(IEnumerable<Carrier> carriers,
-            IEnumerable<IShipment> shipments,
-            IShipment shipment)
+            IEnumerable<Shipment> shipments,
+            Shipment shipment)
         {
             var shippingPrice = shipment.Carrier.Packages.Single(p => p.Size == shipment.PackageSize).Price;
 

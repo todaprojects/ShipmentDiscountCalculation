@@ -4,7 +4,7 @@ using ShipmentDiscountCalculation.Domain.Interfaces;
 
 namespace ShipmentDiscountCalculation.Domain.Models
 {
-    public class Shipment : IShipment
+    public class Shipment
     {
         public DateTime Date { get; set; }
 
@@ -17,6 +17,10 @@ namespace ShipmentDiscountCalculation.Domain.Models
         public Carrier Carrier { get; set; }
 
         public IPriceService PriceService { get; set; }
+
+        public Shipment()
+        {
+        }
 
         public Shipment(DateTime date, PackageSize packageSize, Carrier carrier,
             IPriceService priceService)
